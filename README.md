@@ -1,6 +1,11 @@
 # AA_Tareas
 Tarea 1: Barras Desordenadas
 
+Integrantes:
+
+Daniel Josué Herrera Córdoba
+
+Adrían
 
 ## Bitácora de lo que aprendimos
 
