@@ -5,7 +5,7 @@ Integrantes:
 
 Daniel Josué Herrera Córdoba
 
-Adrían
+Adrián Rodríguez Quirós
 
 ## Bitácora de lo que aprendimos
 
