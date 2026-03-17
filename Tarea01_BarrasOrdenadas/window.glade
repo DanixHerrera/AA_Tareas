@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkWindow" id="mainWindow">
+    <property name="can-focus">False</property>
+    <signal name="destroy" handler="on_mainWindow_destroy" swapped="no"/>
+    <child>
+      <object class="GtkBox" id="boxMain">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkLabel" id="lblBarChart">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="margin-bottom">13</property>
+            <property name="label" translatable="yes">Homework 1: Random Bars</property>
+            <property name="justify">center</property>
+            <attributes>
+              <attribute name="scale" value="3"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="frmAreaBorder">
+            <property name="width-request">-1</property>
+            <property name="height-request">-1</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="label-yalign">0.5099999904632568</property>
+            <child>
+              <object class="GtkDrawingArea" id="drwChart">
+                <property name="width-request">150</property>
+                <property name="height-request">400</property>
+                <property name="can-focus">False</property>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel" id="lblChart">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">This is a chart of random numbers from 5 to 301</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="boxControl">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkBox" id="boxColor1">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="orientation">vertical</property>
+                <child>
+                  <object class="GtkLabel" id="lblColor1">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="margin-left">20</property>
+                    <property name="margin-right">20</property>
+                    <property name="label" translatable="yes">Select minimum color (value 5):</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkColorButton" id="cbtnColor1">
+                    <property name="height-request">50</property>
+                    <property name="can-focus">False</property>
+                    <property name="receives-default">False</property>
+                    <property name="title" translatable="yes">Pick a Color 1</property>
+                    <property name="rgba">rgb(28,113,216)</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkBox" id="boxColor2">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="orientation">vertical</property>
+                <child>
+                  <object class="GtkLabel" id="lblColor2">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="margin-left">20</property>
+                    <property name="margin-right">20</property>
+                    <property name="label" translatable="yes">Select maximum color (value 305):</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkColorButton" id="cbtnColor2">
+                    <property name="height-request">50</property>
+                    <property name="can-focus">False</property>
+                    <property name="receives-default">False</property>
+                    <property name="title" translatable="yes">Pick a Color 2</property>
+                    <property name="rgba">rgb(192,28,40)</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="lblSeparator">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">                |           </property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="btnGenerateBarChart">
+                <property name="label" translatable="yes">Generate Chart &gt;</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_btnGenerateBarChart_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="btnExit">
+                <property name="label" translatable="yes">Exit &gt;</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_btnExit_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">4</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">3</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
